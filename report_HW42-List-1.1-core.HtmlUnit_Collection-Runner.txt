@@ -116,3 +116,121 @@ Title Actual: 		Rexter
 Test Case Result: 	FAILED
 ....<<<<
 
+Usage: <main class> [options]
+  Options:
+    -l, --list
+       Description: Pairs of IRL & title. Separators of Pairs is "|". Example:
+       "http://www.youtube.com|YouTube"
+
+>>>>....
+Test Case ID: 		TC-004.01
+URL: 			http://www.youtube.com
+Title Expected: 	YouTube
+Title Actual: 		YouTube
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.02
+URL: 			https://www.wikipedia.org
+Title Expected: 	Wikipedia
+Title Actual: 		Wikipedia
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.03
+URL: 			http://git-scm.com
+Title Expected: 	Git
+Title Actual: 		Git
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.04
+URL: 			http://www.apple.com
+Title Expected: 	Apple
+Title Actual: 		Apple
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.05
+URL: 			https://www.google.com
+Title Expected: 	Google
+Title Actual: 		Google
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.06
+URL: 			https://www.ups.com/index.html
+Title Expected: 	Delivery Service from UPS
+Title Actual: 		Delivery Service from UPS
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.07
+URL: 			https://rexter.com
+Title Expected: 	Rexter
+Title Actual: 		Rexter
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.08
+URL: 			http://www.youtube.com
+Title Expected: 	A
+Title Actual: 		YouTube
+Test Case Result: 	FAILED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.09
+URL: 			https://www.wikipedia.org
+Title Expected: 	B
+Title Actual: 		Wikipedia
+Test Case Result: 	FAILED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.010
+URL: 			http://git-scm.com
+Title Expected: 	C
+Title Actual: 		Git
+Test Case Result: 	FAILED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.011
+URL: 			http://www.apple.com
+Title Expected: 	D
+Title Actual: 		Apple
+Test Case Result: 	FAILED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.012
+URL: 			https://www.google.com
+Title Expected: 	E
+Title Actual: 		Google
+Test Case Result: 	FAILED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.013
+URL: 			https://www.ups.com/index.html
+Title Expected: 	F
+Title Actual: 		Delivery Service from UPS
+Test Case Result: 	FAILED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-004.014
+URL: 			https://rexter.com
+Title Expected: 	G
+Title Actual: 		Rexter
+Test Case Result: 	FAILED
+....<<<<
+
