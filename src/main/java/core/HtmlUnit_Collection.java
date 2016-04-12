@@ -61,7 +61,7 @@ public class HtmlUnit_Collection {
 		
 		for(int i=0;i<list.size();i++)
 		{
-			String test_case_id = "TC-002.0"+(i+1);
+			String test_case_id = "TC-004.0"+(i+1);
 			String param[] = list.get(i).split("\\|");
 			String url = param[0];
 			String title_expected = param[1];

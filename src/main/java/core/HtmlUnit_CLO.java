@@ -40,7 +40,7 @@ public class HtmlUnit_CLO {
 	
 	@Parameter(names={sTest_case_id, Test_case_id}, description ="Test case ID - > TC-xxx.xx")
 	//Default value
-	private static String test_case_id="TC-001.01";
+	private static String test_case_id="TC-002.01";
 	
 	//Help
 	@Parameter(names={sHelp, Help}, help=true, hidden=true)

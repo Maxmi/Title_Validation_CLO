@@ -39,7 +39,7 @@ public class Selenium_Collection {
 
 		for(int i=0;i<list.size();i++)
 		{
-			String test_case_id = "TC-001.0"+(i+1);
+			String test_case_id = "TC-003.0"+(i+1);
 			String param[] = list.get(i).split("\\|");
 			String url = param[0];
 			String title_expected = param[1];
