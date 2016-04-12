@@ -17,6 +17,8 @@ SET REPO_NAME=%3
 SET APP_VERSION=%4
 SET MAIN_CLASS_01=%5
 SET MAIN_CLASS_02=%6
+SET MAIN_CLASS_03=%7
+SET MAIN_CLASS_04=%8
 ::SET TEST_SUITE=%5
 ::========================================
 
@@ -50,17 +52,28 @@ CALL mvn clean package -Dyc.version="%APP_VERSION%" > report_HW42-%REPO_NAME%-%A
 DEL .\target\%REPO_NAME%-%APP_VERSION%.jar
 COPY .\target\%REPO_NAME%-%APP_VERSION%-jar-with-dependencies.jar .\target\Fat-%APP_VERSION%.jar
 
-
-ECHO Executing Java programm Selenium Web driver...
-::java -jar C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar -c TC-001.01 -u http://www.youtube.com -t YouTube >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-%APP_VERSION%-%MAIN_CLASS%-Runner.txt
-::java -jar C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar -c TC-001.02 -u http://www.youtube.com -t abc >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-%APP_VERSION%-%MAIN_CLASS%-Runner.txt
-
+ECHO String - Command Line Options
+ECHO Executing Java programm Selenium Web driver ...
+java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_01% -h >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-String-%APP_VERSION%-%MAIN_CLASS_01%-Runner.txt
 java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_01% -c TC-001.01 -u http://www.youtube.com -t YouTube >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-String-%APP_VERSION%-%MAIN_CLASS_01%-Runner.txt
 java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_01% -c TC-001.02 -u http://www.youtube.com -t abc >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-String-%APP_VERSION%-%MAIN_CLASS_01%-Runner.txt
 
-ECHO Executing Java programm HtmlUnit driver...
+ECHO Executing Java programm HtmlUnit driver ...
+java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_02% -h >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-String-%APP_VERSION%-%MAIN_CLASS_02%-Runner.txt
 java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_02% -c TC-002.01 -u https://www.wikipedia.org -t Wikipedia >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-String-%APP_VERSION%-%MAIN_CLASS_02%-Runner.txt
 java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_02% -c TC-002.02 -u https://www.wikipedia.org -t abc >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-String-%APP_VERSION%-%MAIN_CLASS_02%-Runner.txt
+
+
+ECHO List - Command Line Options
+ECHO Executing Java programm Selenium Web driver...
+java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_03% -h >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-List-%APP_VERSION%-%MAIN_CLASS_03%-Runner.txt
+java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_03% -l "http://www.youtube.com|YouTube" "https://www.wikipedia.org|Wikipedia" "http://git-scm.com|Git" "http://www.apple.com|Apple" "https://www.google.com|Google" "https://www.ups.com/index.html|Delivery Service from UPS" "https://rexter.com|Rexter" "http://www.youtube.com|A" "https://www.wikipedia.org|B" "http://git-scm.com|C" "http://www.apple.com|D" "https://www.google.com|E" "https://www.ups.com/index.html|F" "https://rexter.com|G" >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-List-%APP_VERSION%-%MAIN_CLASS_03%-Runner.txt
+
+
+ECHO Executing Java programm HtmlUnit driver...
+java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_04% -h >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-List-%APP_VERSION%-%MAIN_CLASS_04%-Runner.txt
+java -cp C:\%WS_DIR%\%REPO_NAME%\target\Fat-%APP_VERSION%.jar %MAIN_CLASS_04% -l "http://www.youtube.com|YouTube" "https://www.wikipedia.org|Wikipedia" "http://git-scm.com|Git" "http://www.apple.com|Apple" "https://www.google.com|Google" "https://www.ups.com/index.html|Delivery Service from UPS" "https://rexter.com|Rexter" "http://www.youtube.com|A" "https://www.wikipedia.org|B" "http://git-scm.com|C" "http://www.apple.com|D" "https://www.google.com|E" "https://www.ups.com/index.html|F" "https://rexter.com|G" >> C:\%WS_DIR%\%REPO_NAME%\report_HW42-List-%APP_VERSION%-%MAIN_CLASS_04%-Runner.txt
+
 
 
 GOTO END

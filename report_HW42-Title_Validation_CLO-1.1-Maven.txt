@@ -21,7 +21,7 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Title_Validation_CLO ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 2 source files to C:\Workspace\Title_Validation_CLO\target\classes
+[INFO] Compiling 4 source files to C:\Workspace\Title_Validation_CLO\target\classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Title_Validation_CLO ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -41,7 +41,7 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 14.426 s
-[INFO] Finished at: 2016-04-11T23:33:53-07:00
-[INFO] Final Memory: 17M/52M
+[INFO] Total time: 14.271 s
+[INFO] Finished at: 2016-04-12T14:35:02-07:00
+[INFO] Final Memory: 18M/54M
 [INFO] ------------------------------------------------------------------------

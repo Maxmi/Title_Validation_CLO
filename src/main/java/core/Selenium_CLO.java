@@ -14,7 +14,7 @@ import com.beust.jcommander.Parameters;
 
 public class Selenium_CLO {
 	
-	
+	//CLO	
 	public static final String sURL="-u";
 	public static final String URL="--url";
 	

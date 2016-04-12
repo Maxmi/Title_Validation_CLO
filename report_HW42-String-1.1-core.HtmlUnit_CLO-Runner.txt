@@ -1,3 +1,15 @@
+Usage: <main class> [options]
+  Options:
+    -c, --tcase
+       Test case ID - > TC-xxx.xx
+       Default: TC-001.01
+    -t, --title
+       Expected title of Web Site
+       Default: learn2test.net
+    -u, --url
+       IRL of Web site -> http://.......
+       Default: http://learn2test.net/
+
 
 >>>>....
 Test Case ID: 		TC-002.01
