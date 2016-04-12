@@ -1,0 +1,47 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for core:Title_Validation_CLO:jar:1.1
+[WARNING] 'version' contains an expression but should be a constant. @ core:Title_Validation_CLO:${yc.version}, C:\Workspace\Title_Validation_CLO\pom.xml, line 7, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Title_Validation_CLO 1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Title_Validation_CLO ---
+[INFO] Deleting C:\Workspace\Title_Validation_CLO\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Title_Validation_CLO ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Workspace\Title_Validation_CLO\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Title_Validation_CLO ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Workspace\Title_Validation_CLO\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Title_Validation_CLO ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Workspace\Title_Validation_CLO\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Title_Validation_CLO ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Title_Validation_CLO ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ Title_Validation_CLO ---
+[INFO] Building jar: C:\Workspace\Title_Validation_CLO\target\Title_Validation_CLO-1.1.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4:single (assemble-all) @ Title_Validation_CLO ---
+[INFO] Building jar: C:\Workspace\Title_Validation_CLO\target\Title_Validation_CLO-1.1-jar-with-dependencies.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.426 s
+[INFO] Finished at: 2016-04-11T23:33:53-07:00
+[INFO] Final Memory: 17M/52M
+[INFO] ------------------------------------------------------------------------

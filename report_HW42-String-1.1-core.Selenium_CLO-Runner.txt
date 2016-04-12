@@ -1,0 +1,17 @@
+
+>>>>....
+Test Case ID: 		TC-001.01
+URL: 			http://www.youtube.com
+Title Expected: 	YouTube
+Title Actual: 		YouTube
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-001.02
+URL: 			http://www.youtube.com
+Title Expected: 	abc
+Title Actual: 		YouTube
+Test Case Result: 	FAILED
+....<<<<
+

@@ -1,0 +1,17 @@
+
+>>>>....
+Test Case ID: 		TC-002.01
+URL: 			https://www.wikipedia.org
+Title Expected: 	Wikipedia
+Title Actual: 		Wikipedia
+Test Case Result: 	PASSED
+....<<<<
+
+>>>>....
+Test Case ID: 		TC-002.02
+URL: 			https://www.wikipedia.org
+Title Expected: 	abc
+Title Actual: 		Wikipedia
+Test Case Result: 	FAILED
+....<<<<
+
